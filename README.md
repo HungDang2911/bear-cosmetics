@@ -1,11 +1,14 @@
 # BearCosmetics
 
 ## Prerequisites
-
+- php7.3fpm
+- linux
 
 ## Installation
 Using docker:
 - Clone this project
+- Setup local domain: 
+`sudo -- sh -c "echo '127.0.0.1 local.domain.com' >> /etc/hosts"`
 - Build images using docker-compose:
 `docker-compose up  -build`
 - Open container bash:
