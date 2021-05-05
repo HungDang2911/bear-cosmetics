@@ -1,8 +1,23 @@
 <?php /** @var BearCosmetic\Exrate\Block\Feed $block */ ?>
-<?php foreach($block->fetchFeed() as $post): ?>
-    <div>
-        <h3><?php echo $post['title'] ?></h3>
-        <p><?php echo $post['description'] ?></p>
-        <p><?php echo $post['pubDate'] ?></p>
-    </div>
-<?php endforeach; ?>
+<table>
+    <tr>
+        <th colspan="2">Ngoại tệ</th>
+        <th colspan="2">Mua</th>
+        <th rowspan="2">Bán</th>
+    </tr>
+    <tr>
+        <th>Tên ngoại tệ</th>
+        <th>Mã NT</th>
+        <th>Tiền mặt</th>
+        <th>Chuyển khoản</th>
+    </tr>
+    <?php foreach($block->fetchExrate() as $exrate): ?>
+        <tr>
+            <td><?php echo $exrate['@attributes']['CurrencyName'] ?></td>
+            <td><?php echo $exrate['@attributes']['CurrencyCode'] ?></td>
+            <td><?php echo $exrate['@attributes']['Buy'] ?></td>
+            <td><?php echo $exrate['@attributes']['Transfer'] ?></td>
+            <td><?php echo $exrate['@attributes']['Sell'] ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>

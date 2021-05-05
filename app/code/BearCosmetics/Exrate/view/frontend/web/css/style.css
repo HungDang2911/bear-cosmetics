@@ -1,0 +1,12 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+th {
+    text-align: center !important;
+}

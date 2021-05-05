@@ -1,3 +1,7 @@
+.post {
+    display: flex;
+}
+
 .post-title {
     color: red;
 }
