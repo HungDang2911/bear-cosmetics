@@ -2,7 +2,7 @@
 <div class="d-flex">
     <?php foreach($block->fetchFeed() as $post): ?>
         <div class="post">
-            <h3 class="post-title"><?php echo $post['title'] ?></h3>
+            <h2 class="post-title"><?php echo $post['title'] ?></h2>
             <p class="post-description"><?php echo $post['description'] ?></p>
             <p class="post-date"><?php echo $post['pubDate'] ?></p>
             <a target="_blank" href="<?php echo $post["link"] ?>">Chi tiết</a>

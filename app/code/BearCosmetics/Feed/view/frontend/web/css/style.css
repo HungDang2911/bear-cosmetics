@@ -1,7 +1,4 @@
 .post {
-    display: flex;
-}
-
-.post-title {
-    color: red;
+    max-width: 700px;
+    margin: 0 auto;
 }
