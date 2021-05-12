@@ -3,6 +3,26 @@
 ## Prerequisites
 - php7.3fpm
 - linux
+- php extensions:
+```
+ext-bcmath
+ext-ctype
+ext-curl
+ext-dom
+ext-gd
+ext-hash
+ext-iconv
+ext-intl
+ext-mbstring
+ext-openssl
+ext-pdo_mysql
+ext-simplexml
+ext-soap
+ext-xsl
+ext-zip
+ext-sockets
+lib-libxml
+```
 
 ## Installation
 Using docker:
